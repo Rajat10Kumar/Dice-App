@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:math';
+// ignore: import_of_legacy_library_into_null_safe
+import 'package:audioplayers/audio_cache.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -26,7 +28,13 @@ class DiceApp extends StatefulWidget {
 class _DiceAppState extends State<DiceApp> {
   var left = 1;
   var right = 1;
+  void playSound() {
+    final player = AudioCache();
+    player.play('DICE.wav');
+  }
+
   void changeDiceNumber() {
+    playSound();
     setState(() {
       left = Random().nextInt(6) + 1;
       right = Random().nextInt(6) + 1;
