@@ -3,7 +3,7 @@
 
 
 A new Flutter application.
-## Generates Random Numbers
+## Generates Random Numbers :game_die:
 
 This project is a starting point for a Flutter application.
 
