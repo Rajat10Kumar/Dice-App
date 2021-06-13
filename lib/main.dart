@@ -1,7 +1,8 @@
+// @dart=2.9
 import 'package:flutter/material.dart';
-import 'dart:math';
 // ignore: import_of_legacy_library_into_null_safe
 import 'package:audioplayers/audio_cache.dart';
+import 'dart:math';
 
 void main() {
   runApp(MaterialApp(
@@ -19,8 +20,6 @@ void main() {
 }
 
 class DiceApp extends StatefulWidget {
-  const DiceApp({Key? key}) : super(key: key);
-
   @override
   _DiceAppState createState() => _DiceAppState();
 }
